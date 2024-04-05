@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-server-backend
+spec:
+  selector:
+    matchLabels:
+      app: node-server
+      tier: backend
+      track: stable
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: node-server
+        tier: backend
+        track: stable
+    spec:
+      containers:
+      - name: node-server
+        image: famasboy888/node-server:0.0.{{ .Values.versionNumber }}.RELEASE
+        imagePullPolicy: Always
+        ports:
+        - name: http
+          containerPort: 80
