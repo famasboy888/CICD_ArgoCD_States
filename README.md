@@ -22,3 +22,11 @@ Note: I got stuck coz we need to add flag `--address='0.0.0.0'` to allow all tra
 ```bash
 kubectl port-forward service/argocd-server -n argocd 8080:443 --address='0.0.0.0'
 ```
+
+Default username: admin
+
+```bash
+#Pass
+kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+```
+
