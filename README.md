@@ -20,7 +20,7 @@ kubectl get all -n argocd
 Note: I got stuck coz we need to add flag `--address='0.0.0.0'` to allow all traffic.
 
 ```bash
-kubectl port-forward service/argocd-server -n argocd 8080:443 --address='0.0.0.0'
+kubectl port-forward service/argocd-server -n argocd 8000:443 --address='0.0.0.0'
 ```
 
 Default username: admin
