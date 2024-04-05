@@ -9,6 +9,7 @@ spec:
       tier: frontend
       track: stable
   replicas: 1
+  revisionHistoryLimit: 0
   template:
     metadata:
       labels:
