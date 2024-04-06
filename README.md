@@ -1,6 +1,19 @@
 # CICD ArgoCD Repository
 
-This is the repository storing all state files for ArgoCD in my Kubernetes Cluster 
+<i>Note: This is the CD part. The CI part is located in [GitHub Actions](https://github.com/famasboy888/CICD_GitAction_ArgoCD_Kubernetes)</i>
+
+## YAML changes will be pushed to ArgoCD repo in GitHub.
+
+<p align="left">
+  <img width="80%" height="80%" src="https://github.com/famasboy888/CICD_GitAction_ArgoCD_Kubernetes/assets/23441168/16d8a777-33d8-4dc6-a17d-99c1a1bbf6b2">
+</p>
+
+## ArgoCD will sync and re-redeploy new changes.
+
+<p align="left">
+  <img width="80%" height="80%" src="https://github.com/famasboy888/CICD_GitAction_ArgoCD_Kubernetes/assets/23441168/8012151c-51c4-47de-9f11-076cb822db77">
+</p>
+
 
 ## Installation
 
