@@ -8,7 +8,7 @@ spec:
       app: react-webapp
       tier: frontend
       track: stable
-  replicas: 3
+  replicas: 10
   revisionHistoryLimit: 0
   template:
     metadata:
